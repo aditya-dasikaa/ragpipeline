@@ -191,6 +191,10 @@ def main():
             print("Loading existing vector store...")
             client = _get_chroma_client(persistent_directory)
             try:
+                # Debugging: List contents of the persistent directory
+                print("Checking contents of the persistent directory...")
+                print(os.listdir(persistent_directory))  # List files in the directory
+                
                 collection = client.get_collection(name="default")
                 print(f"✅ Loaded existing vector store with {collection.count()} documents")
                 return collection

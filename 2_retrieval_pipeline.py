@@ -105,7 +105,7 @@ def main():
         return
     
     # Example query
-    query = "How much did Microsoft pay to acquire GitHub?"
+    query = "In which year did Tesla begin production of Roadster?"
     
     print("="*80)
     print(f"User Query: {query}")
